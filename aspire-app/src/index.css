@@ -1,0 +1,84 @@
+@import "tailwindcss";
+
+@theme {
+
+  --color-primary: #4F46E5;
+  --color-primary-dark: #3730A3;
+  --color-primary-light: #EEF2FF;
+
+  --color-ai: #7C3AED;
+
+  --color-sidebar: #0F172A;
+  --color-page: #F8FAFC;
+  --color-card: #FFFFFF;
+  --color-secondary-bg: #F1F5F9;
+  --color-border: #E2E8F0;
+  --color-divider: #E2E8F0;
+
+
+  --color-heading: #0F172A;
+  --color-body: #334155;
+  --color-secondary-text: #64748B;
+  --color-muted: #94A3B8;
+  --color-disabled: #CBD5E1;
+  --color-white: #FFFFFF;
+
+  
+  /* High Risk / Error */
+  --color-danger: #DC2626;
+  --color-danger-bg: #FEF2F2;
+  --color-danger-border: #FECACA;
+  --color-danger-text: #B91C1C;
+
+  /* Medium Risk / Warning */
+  --color-warning: #F59E0B;
+  --color-warning-bg: #FFFBEB;
+  --color-warning-border: #FDE68A;
+  --color-warning-text: #B45309;
+
+  /* Low Risk / Success */
+  --color-success: #16A34A;
+  --color-success-bg: #F0FDF4;
+  --color-success-border: #BBF7D0;
+  --color-success-text: #15803D;
+
+  /* Information */
+  --color-info: #2563EB;
+  --color-info-bg: #EFF6FF;
+  --color-info-border: #BFDBFE;
+
+  /* Neutral */
+  --color-neutral: #64748B;
+  --color-neutral-bg: #F8FAFC;
+  --color-neutral-border: #E2E8F0;
+
+ 
+  --color-ai-primary: #7C3AED;
+  --color-ai-secondary: #4F46E5;
+  --color-ai-bg: #F5F3FF;
+  --color-ai-border: #DDD6FE;
+  --color-ai-text: #5B21B6;
+
+ 
+  --color-node: #4F46E5;
+  --color-node-selected: #7C3AED;
+  --color-edge: #CBD5E1;
+  --color-edge-selected: #4F46E5;
+  --color-violation: #DC2626;
+  --color-external-node: #64748B;
+}
+
+
+html {
+  font-family: Inter, ui-sans-serif, system-ui, sans-serif;
+}
+
+body {
+  margin: 0;
+  background-color: #F8FAFC;
+  color: #334155;
+}
+
+button {
+  font-family: inherit;
+}
