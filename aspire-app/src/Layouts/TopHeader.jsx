@@ -73,11 +73,11 @@ const TopHeader = ({
               sm:text-lg
             "
           >
-            {title}
+           ASPIRE
           </h1>
 
-          <p className="hidden text-xs text-slate-400 sm:block">
-            Unified Software Intelligence
+          <p className="hidden text-xs text-slate-400 sm:block italic">
+            AI Software platform for Intelligence, Reasoning & Evolution
           </p>
         </div>
       </div>
