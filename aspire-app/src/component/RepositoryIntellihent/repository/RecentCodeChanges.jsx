@@ -1,7 +1,7 @@
 import React from "react";
 import { GitCommit } from "lucide-react";
 
-import { recentCodeChanges } from "../../data/repositoryData";
+import { recentCodeChanges } from "../../../data/repositoryData";
 
 const RecentCodeChanges = () => {
   return (

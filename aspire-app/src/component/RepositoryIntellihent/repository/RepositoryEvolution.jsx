@@ -6,8 +6,7 @@ import {
   FileCode2,
   TrendingUp,
 } from "lucide-react";
-import { evolutionData } from "../../data/repositoryData";
-
+import { evolutionData } from "../../../data/repositoryData";
 
 const icons = [Activity, GitCommit, FileCode2, TrendingUp, GitPullRequest];
 

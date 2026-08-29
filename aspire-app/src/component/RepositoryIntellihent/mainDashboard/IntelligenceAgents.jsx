@@ -1,7 +1,7 @@
 import React from "react";
 import SectionHeader from "./SectionHeader";
 import AgentCard from "./AgentCard";
-import { agents } from "../../data/dashboardData";
+import { agents } from "../../../data/dashboardData";
 
 const IntelligenceAgents = () => {
   return (

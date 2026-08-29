@@ -1,7 +1,7 @@
 import React from "react";
 import { Lightbulb } from "lucide-react";
 import SectionHeader from "./SectionHeader";
-import { insights } from "../../data/dashboardData";
+import { insights } from "../../../data/dashboardData";
 
 const CrossComponentInsights = () => {
   return (

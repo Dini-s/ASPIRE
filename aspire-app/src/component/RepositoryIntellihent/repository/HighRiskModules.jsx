@@ -1,6 +1,6 @@
 import React from "react";
 import { ArrowUpRight, ArrowDown, Info } from "lucide-react";
-import { highRiskModules } from "../../data/repositoryData";
+import { highRiskModules } from "../../../data/repositoryData";
 
 const riskStyles = {
   HIGH: "bg-red-50 text-red-600",

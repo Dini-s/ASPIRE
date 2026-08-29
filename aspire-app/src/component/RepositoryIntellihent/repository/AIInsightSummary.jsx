@@ -1,7 +1,6 @@
-
 import { AlertTriangle, Network, Sparkles } from "lucide-react";
 
-import { aiInsights } from "../../data/repositoryData";
+import { aiInsights } from "../../../data/repositoryData";
 
 const iconMap = {
   blue: Network,

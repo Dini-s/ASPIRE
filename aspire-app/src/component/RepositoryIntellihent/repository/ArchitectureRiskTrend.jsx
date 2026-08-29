@@ -8,7 +8,7 @@ import {
   XAxis,
   YAxis,
 } from "recharts";
-import { riskTrendData } from "../../data/repositoryData";
+import { riskTrendData } from "../../../data/repositoryData";
 
 const ArchitectureRiskTrend = () => {
   return (

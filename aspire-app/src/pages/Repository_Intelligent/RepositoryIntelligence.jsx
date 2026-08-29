@@ -1,13 +1,13 @@
-import AIInsightSummary from "../../component/repository/AIInsightSummary";
-import ArchitectureIssues from "../../component/repository/ArchitectureIssues";
-import ArchitectureRiskTrend from "../../component/repository/ArchitectureRiskTrend";
-import DataSummary from "../../component/repository/DataSummary";
-import HighRiskModules from "../../component/repository/HighRiskModules";
-import HRIMModelSummary from "../../component/repository/HRIMModelSummary";
-import RecentCodeChanges from "../../component/repository/RecentCodeChanges";
-import RepositoryEvolution from "../../component/repository/RepositoryEvolution";
-import RepositoryHeader from "../../component/repository/RepositoryHeader";
-import RepositoryStatCard from "../../component/repository/RepositoryStatCard";
+import AIInsightSummary from "../../component/RepositoryIntellihent/repository/AIInsightSummary";
+import ArchitectureIssues from "../../component/RepositoryIntellihent/repository/ArchitectureIssues";
+import ArchitectureRiskTrend from "../../component/RepositoryIntellihent/repository/ArchitectureRiskTrend";
+import DataSummary from "../../component/RepositoryIntellihent/repository/DataSummary";
+import HighRiskModules from "../../component/RepositoryIntellihent/repository/HighRiskModules";
+import HRIMModelSummary from "../../component/RepositoryIntellihent/repository/HRIMModelSummary";
+import RecentCodeChanges from "../../component/RepositoryIntellihent/repository/RecentCodeChanges";
+import RepositoryEvolution from "../../component/RepositoryIntellihent/repository/RepositoryEvolution";
+import RepositoryHeader from "../../component/RepositoryIntellihent/repository/RepositoryHeader";
+import RepositoryStatCard from "../../component/RepositoryIntellihent/repository/RepositoryStatCard";
 import { repositoryStats } from "../../data/repositoryData";
 
 const RepositoryIntelligence = () => {

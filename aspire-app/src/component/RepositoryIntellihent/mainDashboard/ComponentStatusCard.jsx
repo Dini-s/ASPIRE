@@ -1,6 +1,6 @@
 import React from "react";
-import ProgressRing from "../common/ProgressRing";
-import StatusBadge from "../common/StatusBadge";
+import ProgressRing from "../../common/ProgressRing";
+import StatusBadge from "../../common/StatusBadge";
 
 const colors = {
   "01": "#16A34A",

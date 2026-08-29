@@ -15,6 +15,7 @@ import KnowledgeGraph from "../pages/KnowledgeGraph";
 import Reports from "../pages/Reports";
 import ActivityMonitor from "../pages/ActivityMonitor";
 import AboutAspire from "../pages/AboutAspire";
+import EvolutionOverview from "../pages/Repository_Intelligent/EvolutionOverview";
 
 const AppRoutes = () => {
   return (
@@ -31,6 +32,7 @@ const AppRoutes = () => {
 
           <Route path="repository/repositories" element={<Repositories />} />
 
+          <Route path="repository/evalution" element={<EvolutionOverview />} />
           <Route path="repository/risk-models" element={<RiskModels />} />
 
           <Route

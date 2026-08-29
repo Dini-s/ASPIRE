@@ -8,7 +8,7 @@ import {
   FileCode2,
 } from "lucide-react";
 
-import { dataSummary } from "../../data/repositoryData";
+import { dataSummary } from "../../../data/repositoryData";
 
 const icons = [FileCode2, Boxes, Code2, GitBranch, Users, GitCommit];
 

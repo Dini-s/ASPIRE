@@ -1,7 +1,7 @@
 import React from "react";
 import { Info } from "lucide-react";
 
-import { modelMetrics } from "../../data/repositoryData";
+import { modelMetrics } from "../../../data/repositoryData";
 
 const HRIMModelSummary = () => {
   return (

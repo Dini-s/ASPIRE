@@ -7,7 +7,7 @@ import {
 } from "lucide-react";
 
 import SectionHeader from "./SectionHeader";
-import { activities } from "../../data/dashboardData";
+import { activities } from "../../../data/dashboardData";
 
 const icons = {
   repository: FileCheck2,

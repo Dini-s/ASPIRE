@@ -1,7 +1,7 @@
 import React from "react";
 import SectionHeader from "./SectionHeader";
 import ComponentStatusCard from "./ComponentStatusCard";
-import { intelligenceComponents } from "../../data/dashboardData";
+import { intelligenceComponents } from "../../../data/dashboardData";
 
 const IntelligenceComponents = () => {
   return (

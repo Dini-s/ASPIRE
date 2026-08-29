@@ -1,7 +1,7 @@
 import React from "react";
 import { Cell, Pie, PieChart, ResponsiveContainer } from "recharts";
 
-import { architectureIssues } from "../../data/repositoryData";
+import { architectureIssues } from "../../../data/repositoryData";
 
 const issueColors = ["#EF4444", "#F97316", "#F59E0B", "#8B5CF6", "#06B6D4"];
 
