@@ -1,12 +1,12 @@
 import React from "react";
 import { stats } from "../data/dashboardData";
-import StatCard from "../component/mainDashboard/StatsCard";
-import IntelligenceComponents from "../component/mainDashboard/IntelligenceComponents";
-import IntelligenceAgents from "../component/mainDashboard/IntelligenceAgents";
-import CrossComponentInsights from "../component/mainDashboard/CrossComponentInsights";
-import KnowledgeGraphCard from "../component/mainDashboard/KnowledgeGraphCard";
-import IntelligenceAlerts from "../component/mainDashboard/IntelligenceAlerts";
-import RecentActivity from "../component/mainDashboard/RecentActivity";
+import StatCard from "../component/RepositoryIntellihent/mainDashboard/StatsCard";
+import IntelligenceComponents from "../component/RepositoryIntellihent/mainDashboard/IntelligenceComponents";
+import IntelligenceAgents from "../component/RepositoryIntellihent/mainDashboard/IntelligenceAgents";
+import CrossComponentInsights from "../component/RepositoryIntellihent/mainDashboard/CrossComponentInsights";
+import KnowledgeGraphCard from "../component/RepositoryIntellihent/mainDashboard/KnowledgeGraphCard";
+import IntelligenceAlerts from "../component/RepositoryIntellihent/mainDashboard/IntelligenceAlerts";
+import RecentActivity from "../component/RepositoryIntellihent/mainDashboard/RecentActivity";
 
 const ResearchOverview = () => {
   return (
