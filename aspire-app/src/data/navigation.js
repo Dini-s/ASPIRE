@@ -12,6 +12,8 @@ import {
     GitBranch,
     Bug,
     TestTube2,
+    TrendingUp,
+    ChartNoAxesCombined,
 } from "lucide-react";
 
 export const navigation = [
@@ -55,6 +57,11 @@ export const navigation = [
                 label: "Repositories",
                 path: "/repository/repositories",
                 icon: FolderGit2,
+            },
+            {
+                label: "Evalution & Metrics",
+                path: "/repository/evalution",
+                icon: ChartNoAxesCombined,
             },
 
             {
