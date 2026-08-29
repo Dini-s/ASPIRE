@@ -3,12 +3,12 @@ import {
   repositoryStats,
   repositories as initialRepositories,
 } from "../../data/repositories";
-import RepositoryPageHeader from "../../component/Repo/RepositoryPageHeader";
-import RepositoryStatCard from "../../component/Repo/RepositoryStatCard";
-import RepositoryFilters from "../../component/Repo/RepositoryFilters";
-import RepositoryTable from "../../component/Repo/RepositoryTable";
-import RepositoryPagination from "../../component/Repo/RepositoryPagination";
-import AddRepositoryPanel from "../../component/Repo/AddRepositoryPanel";
+import RepositoryPageHeader from "../../component/RepositoryIntellihent/Repo/RepositoryPageHeader";
+import RepositoryStatCard from "../../component/RepositoryIntellihent/Repo/RepositoryStatCard";
+import RepositoryFilters from "../../component/RepositoryIntellihent/Repo/RepositoryFilters";
+import RepositoryTable from "../../component/RepositoryIntellihent/Repo/RepositoryTable";
+import RepositoryPagination from "../../component/RepositoryIntellihent/Repo/RepositoryPagination";
+import AddRepositoryPanel from "../../component/RepositoryIntellihent/Repo/AddRepositoryPanel";
 
 const Repositories = () => {
   const [repositories, setRepositories] = useState(initialRepositories);
