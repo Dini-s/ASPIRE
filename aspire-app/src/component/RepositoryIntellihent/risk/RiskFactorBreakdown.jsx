@@ -23,7 +23,7 @@ const RiskFactorBreakdown = () => {
           <span className="ml-1 text-slate-400">ⓘ</span>
         </h3>
 
-        <button className="text-[9px] font-medium text-blue-600">
+        <button className="text-[11px] font-medium text-blue-600 border border-ai-secondary p-2 rounded-xl">
           View SHAP Explanation
         </button>
       </div>
@@ -34,7 +34,7 @@ const RiskFactorBreakdown = () => {
             key={factor.name}
             className="grid grid-cols-[1fr_1.3fr_auto_auto] items-center gap-2"
           >
-            <span className="text-[9px] text-slate-600">{factor.name}</span>
+            <span className="text-[11px] text-slate-600">{factor.name}</span>
 
             <div className="h-1.5 overflow-hidden rounded-full bg-slate-100">
               <div
@@ -49,13 +49,13 @@ const RiskFactorBreakdown = () => {
               />
             </div>
 
-            <span className="text-[9px] font-semibold text-slate-700">
+            <span className="text-[11px] font-semibold text-slate-700">
               {factor.value.toFixed(2)}
             </span>
 
             <span
               className={`
-                w-12 text-right text-[8px]
+                w-12 text-right text-[10px]
                 ${textColors[factor.type]}
               `}
             >
