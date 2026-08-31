@@ -27,7 +27,7 @@ const RiskInsights = () => {
                 `}
             />
 
-            <p className="text-[9px] leading-4 text-slate-600">
+            <p className="text-[11px] leading-4 text-slate-600">
               {insight.text}
             </p>
           </div>
@@ -39,7 +39,7 @@ const RiskInsights = () => {
         className="
           mt-5
           flex items-center gap-1
-          text-[9px]
+          text-[11px]
           font-medium
           text-blue-600
         "
