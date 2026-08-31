@@ -192,7 +192,7 @@ const AddRepositoryPanel = ({ open, onClose, onAdd }) => {
               </button>
             </div>
 
-            <p className="mt-1.5 text-[8px] leading-4 text-slate-400">
+            <p className="mt-1.5 text-[10px] leading-4 text-slate-400">
               Token is stored securely and used to access private repositories.
             </p>
           </Field>
@@ -245,7 +245,7 @@ const AddRepositoryPanel = ({ open, onClose, onAdd }) => {
 const Field = ({ label, required, children }) => {
   return (
     <div>
-      <label className="mb-1.5 block text-[9px] font-medium text-slate-600">
+      <label className="mb-1.5 block text-[10px] font-medium text-slate-600">
         {label}
 
         {required && <span className="ml-0.5 text-red-500">*</span>}
