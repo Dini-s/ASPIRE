@@ -81,7 +81,7 @@ const RepositoryStatCard = ({
         </div>
 
         <div className="min-w-0 flex-1">
-          <p className="truncate text-[10px] font-medium text-slate-500">
+          <p className="truncate text-[12px] font-medium text-slate-500">
             {title}
           </p>
 
@@ -89,7 +89,7 @@ const RepositoryStatCard = ({
             <span className={`text-xl font-bold ${style.value}`}>{value}</span>
 
             {suffix && (
-              <span className="text-[10px] text-slate-400">{suffix}</span>
+              <span className="text-[12px] text-slate-400">{suffix}</span>
             )}
           </div>
 
@@ -97,7 +97,7 @@ const RepositoryStatCard = ({
             className={`
               mt-1
               truncate
-              text-[9px]
+              text-[11px]
               font-medium
               ${style.description}
             `}
