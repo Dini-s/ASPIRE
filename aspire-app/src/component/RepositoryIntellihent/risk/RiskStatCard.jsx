@@ -64,7 +64,7 @@ const RiskStatCard = ({ title, value, description, type, icon }) => {
 
           <p
             className={`
-              mt-1 text-[9px]
+              mt-1 text-[11px]
               ${
                 type === "red"
                   ? "text-red-500"

@@ -13,7 +13,7 @@ import { driftDistribution } from "../../../data/riskModules";
 const DriftDistribution = () => {
   return (
     <section className="rounded-xl border border-slate-200 bg-white p-4 shadow-sm">
-      <h2 className="text-xs font-semibold text-slate-900">
+      <h2 className="text-sm font-semibold text-slate-900">
         Drift Probability Distribution
       </h2>
 

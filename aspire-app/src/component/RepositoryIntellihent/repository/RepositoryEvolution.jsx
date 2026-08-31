@@ -18,7 +18,7 @@ const RepositoryEvolution = () => {
           Repository Evolution Overview
         </h2>
 
-        <button className="text-[9px] font-medium text-indigo-600">
+        <button className="text-[11px] font-medium text-indigo-600">
           View Details
         </button>
       </div>
@@ -34,11 +34,11 @@ const RepositoryEvolution = () => {
               </div>
 
               <div className="w-28 shrink-0">
-                <p className="text-[9px] font-semibold text-slate-700">
+                <p className="text-[11px] font-semibold text-slate-700">
                   {item.label}
                 </p>
 
-                <p className="text-[8px] text-slate-400">{item.period}</p>
+                <p className="text-[12px] text-slate-400">{item.period}</p>
               </div>
 
               <strong className="w-12 text-right text-xs text-slate-800">

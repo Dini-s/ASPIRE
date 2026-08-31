@@ -32,7 +32,7 @@ const DataSummary = () => {
               </div>
 
               <div>
-                <p className="text-[8px] text-slate-400">{item.label}</p>
+                <p className="text-[10px] text-slate-400">{item.label}</p>
 
                 <p className="mt-0.5 text-xs font-bold text-slate-800">
                   {item.value}

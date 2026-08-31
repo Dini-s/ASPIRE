@@ -22,7 +22,7 @@ const RiskModuleTable = ({ modules, selectedModule, onSelect }) => {
           grid-cols-[1.5fr_1fr_0.8fr_0.7fr_0.8fr_0.8fr_0.7fr_0.8fr]
           bg-slate-50
           px-4 py-3
-          text-[8px]
+          text-[10px]
           font-semibold
           text-slate-500
         "
@@ -81,19 +81,19 @@ const RiskModuleTable = ({ modules, selectedModule, onSelect }) => {
                 {module.name}
               </p>
 
-              <p className="text-[8px] text-slate-400">{module.package}</p>
+              <p className="text-[10px] text-slate-400">{module.package}</p>
             </div>
           </div>
 
           {/* Package */}
-          <span className="text-[8px] text-slate-500">com.petclinic</span>
+          <span className="text-[10px] text-slate-500">com.petclinic</span>
 
           {/* Risk */}
           <span
             className={`
               w-fit rounded-md
               px-2 py-1
-              text-[8px]
+              text-[10px]
               font-semibold
               ${riskStyles[module.risk]}
             `}
@@ -138,17 +138,17 @@ const RiskModuleTable = ({ modules, selectedModule, onSelect }) => {
           </div>
 
           {/* Complexity */}
-          <span className={`text-[8px] ${levelStyles[module.complexity]}`}>
+          <span className={`text-[10px] ${levelStyles[module.complexity]}`}>
             {module.complexity}
           </span>
 
           {/* Coupling */}
-          <span className={`text-[8px] ${levelStyles[module.coupling]}`}>
+          <span className={`text-[10px] ${levelStyles[module.coupling]}`}>
             {module.coupling}
           </span>
 
           {/* Churn */}
-          <span className={`text-[8px] ${levelStyles[module.churn]}`}>
+          <span className={`text-[10px] ${levelStyles[module.churn]}`}>
             {module.churn}
           </span>
         </div>

@@ -17,7 +17,7 @@ const ArchitectureIssues = () => {
           <span className="text-slate-400">ⓘ</span>
         </div>
 
-        <button className="text-[9px] text-indigo-600">View All</button>
+        <button className="text-[11px] text-indigo-600">View All</button>
       </div>
 
       <div className="flex items-center gap-3">
@@ -43,7 +43,7 @@ const ArchitectureIssues = () => {
           <div className="absolute inset-0 flex flex-col items-center justify-center">
             <strong className="text-xl text-slate-800">17</strong>
 
-            <span className="text-[8px] text-slate-400">Total Issues</span>
+            <span className="text-[12px] text-slate-400">Total Issues</span>
           </div>
         </div>
 
@@ -58,15 +58,15 @@ const ArchitectureIssues = () => {
                 }}
               />
 
-              <span className="min-w-0 flex-1 truncate text-[8px] text-slate-600">
+              <span className="min-w-0 flex-1 truncate text-[12px] text-slate-600">
                 {issue.name}
               </span>
 
-              <strong className="text-[9px] text-slate-700">
+              <strong className="text-[11px] text-slate-700">
                 {issue.value}
               </strong>
 
-              <span className="text-[8px] text-slate-400">
+              <span className="text-[12px] text-slate-400">
                 ({issue.percentage}%)
               </span>
             </div>

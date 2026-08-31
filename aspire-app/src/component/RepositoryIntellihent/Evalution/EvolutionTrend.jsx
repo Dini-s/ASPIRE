@@ -25,9 +25,9 @@ const EvolutionTrend = () => {
       {/* Controls */}
       <div className="mt-4 flex items-center gap-4">
         <div className="flex-1">
-          <label className="mb-1 block text-[7px] text-slate-400">Metric</label>
+          <label className="mb-1 block text-[9px] text-slate-400">Metric</label>
 
-          <select className="h-8 w-full rounded-md border border-slate-200 px-2 text-[9px] text-slate-600 outline-none">
+          <select className="h-8 w-full rounded-md border border-slate-200 px-2 text-[11px] text-slate-600 outline-none">
             <option>Architecture Health Score</option>
             <option>Drift Probability</option>
             <option>Maintainability Index</option>
@@ -35,22 +35,22 @@ const EvolutionTrend = () => {
         </div>
 
         <div className="w-28">
-          <label className="mb-1 block text-[7px] text-slate-400">
+          <label className="mb-1 block text-[9px] text-slate-400">
             Time Range
           </label>
 
-          <select className="h-8 w-full rounded-md border border-slate-200 px-2 text-[9px] text-slate-600 outline-none">
+          <select className="h-8 w-full rounded-md border border-slate-200 px-2 text-[11px] text-slate-600 outline-none">
             <option>Last 6 Months</option>
             <option>Last 12 Months</option>
           </select>
         </div>
 
         <div className="hidden text-right sm:block">
-          <p className="text-[7px] text-slate-400">Current Score</p>
+          <p className="text-[9px] text-slate-400">Current Score</p>
 
           <p className="text-xl font-bold text-purple-600">
             72
-            <span className="text-[8px] text-slate-400"> / 100</span>
+            <span className="text-[10px] text-slate-400"> / 100</span>
           </p>
         </div>
       </div>
@@ -125,7 +125,7 @@ const EvolutionTrend = () => {
         </ResponsiveContainer>
       </div>
 
-      <div className="mt-1 flex items-center gap-2 text-[8px] text-slate-500">
+      <div className="mt-1 flex items-center gap-2 text-[10px] text-slate-500">
         <span className="h-2 w-2 rounded-full bg-purple-600" />
         Architecture Health Score
       </div>

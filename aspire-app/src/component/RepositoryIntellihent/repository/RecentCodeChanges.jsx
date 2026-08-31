@@ -14,7 +14,7 @@ const RecentCodeChanges = () => {
           </span>
         </h2>
 
-        <button className="text-[9px] text-indigo-600">View All</button>
+        <button className="text-[11px] text-indigo-600">View All</button>
       </div>
 
       <div>
@@ -33,21 +33,21 @@ const RecentCodeChanges = () => {
 
             <div className="min-w-0 flex-1">
               <div className="flex items-center gap-2">
-                <p className="text-[9px] font-semibold text-slate-700">
+                <p className="text-[11px] font-semibold text-slate-700">
                   {change.module}
                 </p>
 
-                <span className="text-[8px] text-slate-400">
+                <span className="text-[10px] text-slate-400">
                   {change.commit}
                 </span>
               </div>
 
-              <p className="mt-0.5 truncate text-[8px] text-slate-400">
+              <p className="mt-0.5 truncate text-[10px] text-slate-400">
                 {change.description}
               </p>
             </div>
 
-            <span className="hidden text-[8px] text-slate-400 sm:block">
+            <span className="hidden text-[10px] text-slate-400 sm:block">
               {change.time}
             </span>
 
@@ -55,7 +55,7 @@ const RecentCodeChanges = () => {
               className={`
                 rounded-md
                 px-2 py-1
-                text-[8px]
+                text-[10px]
                 font-semibold
                 ${
                   change.type === "success"

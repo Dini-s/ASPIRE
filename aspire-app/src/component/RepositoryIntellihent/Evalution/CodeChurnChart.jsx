@@ -33,11 +33,11 @@ const CodeChurnChart = () => {
           </ResponsiveContainer>
 
           <div className="absolute inset-0 flex flex-col items-center justify-center">
-            <span className="text-[7px] text-slate-400">Total Changes</span>
+            <span className="text-[9px] text-slate-400">Total Changes</span>
 
             <strong className="text-lg text-slate-800">125,342</strong>
 
-            <span className="text-[7px] text-emerald-600">▲ 8.3%</span>
+            <span className="text-[9px] text-emerald-600">▲ 8.3%</span>
           </div>
         </div>
 
@@ -51,13 +51,13 @@ const CodeChurnChart = () => {
                 }}
               />
 
-              <span className="text-[8px] text-slate-600">{item.name}</span>
+              <span className="text-[10px] text-slate-600">{item.name}</span>
 
-              <span className="text-[8px] font-semibold text-slate-700">
+              <span className="text-[10px] font-semibold text-slate-700">
                 {item.value.toLocaleString()}
               </span>
 
-              <span className="text-[7px] text-slate-400">
+              <span className="text-[9px] text-slate-400">
                 ({item.percent}%)
               </span>
             </div>
@@ -65,7 +65,7 @@ const CodeChurnChart = () => {
         </div>
       </div>
 
-      <button className="mt-3 text-[8px] font-medium text-blue-600">
+      <button className="mt-3 text-[10px] font-medium text-blue-600">
         View Code Churn Details →
       </button>
     </section>

@@ -1,16 +1,26 @@
 import React from "react";
 import { Eye } from "lucide-react";
 import { highRiskModules } from "../../../data/evolutionData";
+import { useNavigate } from "react-router-dom";
 
 const HighRiskModules = () => {
+  const navigate = useNavigate();
+
+  const moveRiskModule = () => {
+    navigate("/repository/risk-models");
+  };
+
   return (
     <section className="rounded-xl border border-slate-200 bg-white p-4 shadow-sm">
       <div className="flex items-center justify-between">
-        <h2 className="text-xs font-bold text-slate-900">
+        <h2 className="text-sm font-bold text-slate-900">
           High Risk Modules (Based on HRIM)
         </h2>
 
-        <button className="text-[8px] font-medium text-blue-600">
+        <button
+          onClick={moveRiskModule}
+          className="text-[10px] font-medium text-blue-600"
+        >
           View All Modules →
         </button>
       </div>
@@ -18,7 +28,7 @@ const HighRiskModules = () => {
       <div className="mt-3 overflow-x-auto">
         <table className="w-full min-w-[600px] border-collapse">
           <thead>
-            <tr className="border-b border-slate-100 text-left text-[7px] text-slate-400">
+            <tr className="border-b border-slate-100 text-left text-[11px] text-slate-400">
               <th className="pb-2">Module</th>
               <th className="pb-2">Drift Probability</th>
               <th className="pb-2">Risk Level</th>
@@ -34,7 +44,7 @@ const HighRiskModules = () => {
             {highRiskModules.map((module) => (
               <tr
                 key={module.module}
-                className="border-b border-slate-50 text-[8px] hover:bg-slate-50"
+                className="border-b border-slate-50 text-[10px] hover:bg-slate-50"
               >
                 <td className="py-2 font-medium text-slate-700">
                   {module.module}
@@ -48,7 +58,7 @@ const HighRiskModules = () => {
                   <span
                     className={`
                       rounded-md px-2 py-1
-                      text-[7px] font-semibold
+                      text-[11px] font-semibold
                       ${
                         module.risk === "High"
                           ? "bg-red-50 text-red-500"

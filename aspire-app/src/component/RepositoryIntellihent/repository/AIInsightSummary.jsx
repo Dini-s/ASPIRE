@@ -1,6 +1,7 @@
 import { AlertTriangle, Network, Sparkles } from "lucide-react";
 
 import { aiInsights } from "../../../data/repositoryData";
+import { useNavigate } from "react-router-dom";
 
 const iconMap = {
   blue: Network,
@@ -9,6 +10,11 @@ const iconMap = {
 };
 
 const AIInsightSummary = () => {
+  const navigate = useNavigate();
+
+  const moveExplanation = () => {
+    navigate(`/repository/ai-explanation?module=PaymentService`);
+  };
   return (
     <section className="rounded-xl border border-slate-200 bg-white p-4 shadow-sm">
       <div className="flex items-center justify-between">
@@ -20,17 +26,17 @@ const AIInsightSummary = () => {
           <span className="text-slate-400">ⓘ</span>
         </div>
 
-        <button className="text-[9px] font-medium text-indigo-600">
+        <button className="text-[11px] font-medium text-indigo-600">
           New (3)
         </button>
       </div>
 
       <div className="mt-3 rounded-lg border border-slate-200 bg-slate-50/70 p-3">
-        <h3 className="text-xs font-semibold text-slate-800">
+        <h3 className="text-sm font-semibold text-slate-800">
           PaymentService shows high architecture-drift risk.
         </h3>
 
-        <p className="mt-1 text-[9px] leading-4 text-slate-500">
+        <p className="mt-1 text-[11px] leading-4 text-slate-500">
           High code churn, elevated complexity, strong coupling and layer
           violation are the main contributing factors.
         </p>
@@ -55,11 +61,11 @@ const AIInsightSummary = () => {
               </div>
 
               <div className="min-w-0">
-                <p className="text-[9px] font-semibold text-slate-700">
+                <p className="text-[11px] font-semibold text-slate-700">
                   {item.title}
                 </p>
 
-                <p className="mt-0.5 text-[8px] text-slate-400">
+                <p className="mt-0.5 text-[10px] text-slate-400">
                   {item.description}
                 </p>
               </div>
@@ -69,13 +75,14 @@ const AIInsightSummary = () => {
       </div>
 
       <button
+        onClick={moveExplanation}
         className="
           mt-3
           w-full
           rounded-lg
           border border-indigo-100
           py-2
-          text-[9px]
+          text-[11px]
           font-medium
           text-indigo-600
           transition

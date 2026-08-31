@@ -14,7 +14,7 @@ const AnalysisHistory = () => {
       <div className="mt-4 overflow-x-auto">
         <table className="w-full min-w-[550px]">
           <thead>
-            <tr className="border-b border-slate-100 text-left text-[7px] text-slate-400">
+            <tr className="border-b border-slate-100 text-left text-[9px] text-slate-400">
               <th className="pb-2">Analysis ID</th>
 
               <th className="pb-2">Date & Time</th>
@@ -29,7 +29,7 @@ const AnalysisHistory = () => {
 
           <tbody>
             {analysisHistory.map((item) => (
-              <tr key={item.id} className="border-b border-slate-50 text-[8px]">
+              <tr key={item.id} className="border-b border-slate-50 text-[10px]">
                 <td className="py-2 text-blue-600">{item.id}</td>
 
                 <td className="py-2 text-slate-600">
@@ -45,7 +45,7 @@ const AnalysisHistory = () => {
                 <td className="py-2 text-slate-700">{item.drift}</td>
 
                 <td className="py-2">
-                  <span className="rounded-md bg-emerald-50 px-2 py-1 text-[7px] font-medium text-emerald-600">
+                  <span className="rounded-md bg-emerald-50 px-2 py-1 text-[9px] font-medium text-emerald-600">
                     {item.status}
                   </span>
                 </td>
@@ -55,7 +55,7 @@ const AnalysisHistory = () => {
         </table>
       </div>
 
-      <button className="mt-3 text-[8px] font-medium text-blue-600">
+      <button className="mt-3 text-[10px] font-medium text-blue-600">
         View Full History →
       </button>
     </section>

@@ -60,7 +60,7 @@ const EvolutionStatCard = ({
         </div>
 
         <div className="min-w-0 flex-1">
-          <p className="truncate text-[9px] font-medium text-slate-600">
+          <p className="truncate text-[11px] font-medium text-slate-600">
             {title}
           </p>
 
@@ -72,7 +72,7 @@ const EvolutionStatCard = ({
             )}
 
             {badge && (
-              <span className="rounded-md bg-red-50 px-2 py-1 text-[7px] font-semibold text-red-500">
+              <span className="rounded-md bg-red-50 px-2 py-1 text-[11px] font-semibold text-red-500">
                 {badge}
               </span>
             )}
@@ -80,7 +80,7 @@ const EvolutionStatCard = ({
 
           <p
             className={`
-              mt-1 text-[8px]
+              mt-1 text-[10px]
               ${change?.includes("▼") ? "text-red-500" : "text-emerald-600"}
             `}
           >
