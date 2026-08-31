@@ -23,6 +23,7 @@ import ActivityMonitor from "../pages/ActivityMonitor";
 import AboutAspire from "../pages/AboutAspire";
 import EvolutionOverview from "../pages/Repository_Intelligent/EvolutionOverview";
 import AIExplanation from "../pages/Repository_Intelligent/AIExplanation";
+import CrossComponentInsights from "../pages/CrossComponentInsights";
 
 const AppRoutes = () => {
   return (
@@ -57,6 +58,7 @@ const AppRoutes = () => {
           <Route path="traceability" element={<TraceabilityIntelligence />} />
 
           <Route path="knowledge-graph" element={<KnowledgeGraph />} />
+          <Route path="cross-insights" element={<CrossComponentInsights />} />
 
           <Route path="reports" element={<Reports />} />
 
