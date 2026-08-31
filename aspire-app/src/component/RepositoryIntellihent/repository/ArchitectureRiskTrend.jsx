@@ -19,7 +19,7 @@ const ArchitectureRiskTrend = () => {
             Architecture Risk Trend
           </h2>
 
-          <p className="mt-1 text-[9px] text-slate-400">Risk Probability (%)</p>
+          <p className="mt-1 text-[11px] text-slate-400">Risk Probability (%)</p>
         </div>
 
         <select
@@ -28,7 +28,7 @@ const ArchitectureRiskTrend = () => {
             border border-slate-200
             bg-white
             px-2 py-1.5
-            text-[9px]
+            text-[11px]
             text-slate-600
             outline-none
           "
@@ -98,7 +98,7 @@ const ArchitectureRiskTrend = () => {
         </ResponsiveContainer>
       </div>
 
-      <div className="mt-2 flex items-center justify-center gap-5 text-[9px] text-slate-500">
+      <div className="mt-2 flex items-center justify-center gap-5 text-[11px] text-slate-500">
         <span className="flex items-center gap-1.5">
           <span className="h-1.5 w-1.5 rounded-full bg-blue-600" />
           Architecture Drift Probability
