@@ -31,14 +31,14 @@ const RiskGauge = ({ value = 89 }) => {
       <div className="absolute inset-x-0 bottom-4 text-center">
         <p className="text-3xl font-bold text-slate-900">{value}%</p>
 
-        <p className="mt-1 text-[9px] font-medium text-red-500">High Risk</p>
+        <p className="mt-1 text-[11px] font-medium text-red-500">High Risk</p>
       </div>
 
-      <span className="absolute bottom-1 left-2 text-[8px] text-slate-400">
+      <span className="absolute bottom-1 left-2 text-[10px] text-slate-400">
         0%
       </span>
 
-      <span className="absolute bottom-1 right-2 text-[8px] text-slate-400">
+      <span className="absolute bottom-0 right-2 text-[10px] text-slate-400">
         100%
       </span>
     </div>
