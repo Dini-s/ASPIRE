@@ -15,7 +15,7 @@ const RepositoryTable = ({ repositories, onView, onAnalyze }) => {
           bg-slate-50
           px-4
           py-3
-          text-[8px]
+          text-[10px]
           font-semibold
           uppercase
           tracking-wide
