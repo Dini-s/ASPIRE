@@ -7,13 +7,12 @@ import CrossComponentInsights from "../component/RepositoryIntellihent/mainDashb
 import KnowledgeGraphCard from "../component/RepositoryIntellihent/mainDashboard/KnowledgeGraphCard";
 import IntelligenceAlerts from "../component/RepositoryIntellihent/mainDashboard/IntelligenceAlerts";
 import RecentActivity from "../component/RepositoryIntellihent/mainDashboard/RecentActivity";
+import ContentHeader from "../component/common/ContentHeader";
 
 const ResearchOverview = () => {
   return (
     <div className="mx-auto w-full max-w-[1500px]">
-      <div className="mb-5">
-        <h2 className="text-sm font-semibold text-slate-900">Main Content</h2>
-      </div>
+      <ContentHeader title={"Framework Overview"} subtitle={""} />
 
       <div className="grid grid-cols-1 gap-4 md:grid-cols-2 xl:grid-cols-3">
         {stats.map((stat) => (
