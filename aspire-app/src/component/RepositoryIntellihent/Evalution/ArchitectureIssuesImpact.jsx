@@ -2,10 +2,17 @@ import React from "react";
 import { Cell, Pie, PieChart, ResponsiveContainer } from "recharts";
 
 import { architectureIssues } from "../../../data/evolutionData";
+import { useNavigate } from "react-router-dom";
 
 const COLORS = ["#ef4444", "#f59e0b", "#86efac"];
 
 const ArchitectureIssuesImpact = () => {
+  const navigate = useNavigate();
+
+  const moveIssue = () => {
+    navigate("/repository/issues");
+  };
+
   return (
     <section className="rounded-xl border border-slate-200 bg-white p-4 shadow-sm">
       <h2 className="text-xs font-bold text-slate-900">
@@ -32,7 +39,7 @@ const ArchitectureIssuesImpact = () => {
           <div className="absolute inset-0 flex flex-col items-center justify-center">
             <strong className="text-lg">32</strong>
 
-            <span className="text-[7px] text-slate-400">Total Issues</span>
+            <span className="text-[9px] text-slate-400">Total Issues</span>
           </div>
         </div>
 
@@ -46,13 +53,13 @@ const ArchitectureIssuesImpact = () => {
                 }}
               />
 
-              <span className="w-20 text-[8px] text-slate-600">
+              <span className="w-20 text-[10px] text-slate-600">
                 {item.name}
               </span>
 
-              <span className="text-[8px] text-slate-700">{item.value}</span>
+              <span className="text-[10px] text-slate-700">{item.value}</span>
 
-              <span className="text-[7px] text-slate-400">
+              <span className="text-[9px] text-slate-400">
                 ({item.percent}%)
               </span>
             </div>
@@ -60,7 +67,10 @@ const ArchitectureIssuesImpact = () => {
         </div>
       </div>
 
-      <button className="mt-3 text-[8px] font-medium text-blue-600">
+      <button
+        onClick={moveIssue}
+        className="mt-3 text-[10px] font-medium text-blue-600"
+      >
         View Architecture Issues →
       </button>
     </section>
