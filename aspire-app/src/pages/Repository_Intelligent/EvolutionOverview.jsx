@@ -14,25 +14,21 @@ import SoftwareMetricsSummary from "../../component/RepositoryIntellihent/Evalut
 import HighRiskModules from "../../component/RepositoryIntellihent/Evalution/HighRiskModules";
 import CodeChurnChart from "../../component/RepositoryIntellihent/Evalution/CodeChurnChart";
 import TopMetricsByModule from "../../component/RepositoryIntellihent/Evalution/TopMetricsByModule";
-import ArchitectureIssues from "../../component/RepositoryIntellihent/repository/ArchitectureIssues";
 import DependencyOverview from "../../component/RepositoryIntellihent/Evalution/DependencyOverview";
 import AnalysisHistory from "../../component/RepositoryIntellihent/Evalution/AnalysisHistory";
 import RepositoryHeader from "../../component/RepositoryIntellihent/repository/RepositoryHeader";
 import ContentHeader from "../../component/common/ContentHeader";
+import ArchitectureIssuesImpact from "../../component/RepositoryIntellihent/Evalution/ArchitectureIssuesImpact";
 
 const EvolutionOverview = () => {
   return (
     <div className="mx-auto w-full max-w-[1600px]">
       <header className="mb-1">
-        
-          <ContentHeader
-            title={"Evolution & Metrics"}
-            subtitle={"All the metrics and evalution analyze"}
-          />
-        
+        <ContentHeader
+          title={"Evolution & Metrics"}
+          subtitle={"All the metrics and evalution analyze"}
+        />
       </header>
-
-      <EvolutionTabs />
 
       <section className="mt-2 grid grid-cols-1 gap-2 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-6">
         {evolutionStats.map((stat) => (
@@ -46,7 +42,7 @@ const EvolutionOverview = () => {
         <SoftwareMetricsSummary />
       </section>
 
-      <section className="mt-2 grid grid-cols-1 gap-2 xl:grid-cols-[1.15fr_0.72fr_0.72fr]">
+      <section className="mt-2 grid grid-cols-1 gap-2 xl:grid-cols-[1.15fr_0.72fr_1.0fr]">
         <HighRiskModules />
 
         <CodeChurnChart />
@@ -54,8 +50,8 @@ const EvolutionOverview = () => {
         <TopMetricsByModule />
       </section>
 
-      <section className="mt-2 grid grid-cols-1 gap-2 lg:grid-cols-2 xl:grid-cols-[0.9fr_0.9fr_1.4fr]">
-        <ArchitectureIssues />
+      <section className="mt-2 grid grid-cols-1 gap-2 lg:grid-cols-2 xl:grid-cols-[0.9fr_0.9fr_2.3fr]">
+        <ArchitectureIssuesImpact />
 
         <DependencyOverview />
 
