@@ -148,7 +148,7 @@ const Sidebar = ({
             <div className="mt-1 flex items-center justify-between">
 
               <span className="text-[10px] text-slate-300">
-                May 12, 2025 • 09:45 AM
+                May 12, 2026 • 09:45 AM
               </span>
 
               <span className="h-2 w-2 rounded-full bg-emerald-400 shadow-sm shadow-emerald-400/50" />
