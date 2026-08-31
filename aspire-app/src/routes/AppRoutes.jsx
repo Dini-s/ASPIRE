@@ -1,5 +1,11 @@
 import React from "react";
-import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
+import {
+  BrowserRouter,
+  Routes,
+  Route,
+  Navigate,
+  useParams,
+} from "react-router-dom";
 import DashboardLayout from "../Layouts/DashboardLayout";
 import ResearchOverview from "../pages/ResearchOverview";
 import RequirementIntelligence from "../pages/RequirementIntelligent/RequirementIntelligence";
@@ -16,6 +22,7 @@ import Reports from "../pages/Reports";
 import ActivityMonitor from "../pages/ActivityMonitor";
 import AboutAspire from "../pages/AboutAspire";
 import EvolutionOverview from "../pages/Repository_Intelligent/EvolutionOverview";
+import AIExplanation from "../pages/Repository_Intelligent/AIExplanation";
 
 const AppRoutes = () => {
   return (
@@ -40,6 +47,7 @@ const AppRoutes = () => {
             element={<ArchitectureVisualization />}
           />
 
+          <Route path="repository/ai-explanation" element={<AIExplanation />} />
           <Route path="repository/issues" element={<ArchitectureIssues />} />
 
           <Route path="repository/dependencies" element={<Dependencies />} />
