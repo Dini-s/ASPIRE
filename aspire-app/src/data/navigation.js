@@ -128,7 +128,7 @@ export const navigation = [
     {
         type: "item",
         label: "Cross-Component Insights",
-        path: "/insights",
+        path: "/cross-insights",
         icon: BarChart3,
     },
 
