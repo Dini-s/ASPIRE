@@ -20,13 +20,13 @@ const HighRiskModules = () => {
           <Info size={12} className="text-slate-400" />
         </div>
 
-        <button className="text-[9px] font-medium text-indigo-600">
+        <button className="text-[11px] font-medium text-indigo-600">
           View All
         </button>
       </div>
 
       {/* Header */}
-      <div className="grid grid-cols-[1.5fr_0.7fr_0.7fr_0.4fr] bg-slate-50 px-3 py-2 text-[8px] font-medium text-slate-500">
+      <div className="grid grid-cols-[1.5fr_0.7fr_0.7fr_0.4fr] bg-slate-50 px-3 py-2 text-[10px] font-medium text-slate-500">
         <span>Module</span>
         <span>Risk Level</span>
         <span>Drift Probability</span>
@@ -53,11 +53,11 @@ const HighRiskModules = () => {
             </div>
 
             <div className="min-w-0">
-              <p className="truncate text-[9px] font-semibold text-slate-700">
+              <p className="truncate text-[11px] font-semibold text-slate-700">
                 {module.name}
               </p>
 
-              <p className="truncate text-[8px] text-slate-400">
+              <p className="truncate text-[10px] text-slate-400">
                 {module.package}
               </p>
             </div>
@@ -68,7 +68,7 @@ const HighRiskModules = () => {
               w-fit
               rounded-md
               px-2 py-1
-              text-[8px]
+              text-[10px]
               font-semibold
               ${riskStyles[module.risk]}
             `}
@@ -76,7 +76,7 @@ const HighRiskModules = () => {
             {module.risk}
           </span>
 
-          <span className="text-[9px] font-semibold text-slate-700">
+          <span className="text-[11px] font-semibold text-slate-700">
             {module.drift}
           </span>
 

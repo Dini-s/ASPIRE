@@ -72,7 +72,7 @@ const RepositoryRow = ({
             {repository.name}
           </p>
 
-          <p className="mt-0.5 truncate text-[8px] text-blue-500">
+          <p className="mt-0.5 truncate text-[10px] text-blue-500">
             {repository.url}
           </p>
         </div>
@@ -85,7 +85,7 @@ const RepositoryRow = ({
             flex h-5 w-5
             items-center justify-center
             rounded-full
-            text-[8px]
+            text-[10px]
             ${providerStyles[repository.providerType]}
           `}
         >
@@ -101,13 +101,13 @@ const RepositoryRow = ({
 
       {/* Branch */}
       <div>
-        <span className="rounded-md bg-blue-50 px-2 py-1 text-[9px] font-medium text-blue-600">
+        <span className="rounded-md bg-blue-50 px-2 py-1 text-[11px] font-medium text-blue-600">
           {repository.branch}
         </span>
       </div>
 
       {/* Language */}
-      <div className="flex items-center gap-2 text-[9px] text-slate-600">
+      <div className="flex items-center gap-2 text-[11px] text-slate-600">
         <span className="text-sm">
           {languageIcons[repository.language] || (
             <Code2 size={14} />
@@ -127,7 +127,7 @@ const RepositoryRow = ({
       </div>
 
       {/* Last analyzed */}
-      <div className="text-[9px] text-slate-500">
+      <div className="text-[11px] text-slate-500">
         <p>{repository.lastAnalyzed}</p>
 
         {repository.time && (
@@ -146,7 +146,7 @@ const RepositoryRow = ({
             border border-slate-200
             px-2
             py-1
-            text-[9px]
+            text-[11px]
             font-medium
             text-blue-600
             transition
@@ -170,7 +170,7 @@ const RepositoryRow = ({
             border border-blue-200
             px-2
             py-1
-            text-[9px]
+            text-[11px]
             font-medium
             text-blue-600
             transition

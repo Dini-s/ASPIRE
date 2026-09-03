@@ -3,12 +3,19 @@ import { MoreVertical, ShieldAlert } from "lucide-react";
 
 import RiskGauge from "./RiskGauge";
 import RiskFactorBreakdown from "./RiskFactorBreakdown";
+import { useNavigate } from "react-router-dom";
 
 const RiskModuleDetail = ({ module }) => {
+  const navigate = useNavigate();
+
+  const moveExplanation = () => {
+    navigate(`/repository/ai-explanation?module=${module}`);
+  };
+
   if (!module) {
     return (
       <div className="flex min-h-[500px] items-center justify-center rounded-xl border border-slate-200 bg-white p-6">
-        <p className="text-xs text-slate-400">
+        <p className="text-sm text-slate-400">
           Select a module to view details
         </p>
       </div>
@@ -38,12 +45,12 @@ const RiskModuleDetail = ({ module }) => {
                 {module.name}
               </h2>
 
-              <span className="rounded-md bg-red-50 px-2 py-1 text-[8px] font-semibold text-red-500">
+              <span className="rounded-md bg-red-50 px-2 py-1 text-[10px] font-semibold text-red-500">
                 HIGH RISK
               </span>
             </div>
 
-            <p className="mt-1 text-[9px] text-slate-500">{module.package}</p>
+            <p className="mt-1 text-[11px] text-slate-500">{module.package}</p>
           </div>
         </div>
 
@@ -83,7 +90,7 @@ const RiskModuleDetail = ({ module }) => {
             h-9 flex-1
             rounded-lg
             border border-blue-300
-            text-[9px]
+            text-[11px]
             font-medium
             text-blue-600
             transition
@@ -95,11 +102,12 @@ const RiskModuleDetail = ({ module }) => {
 
         <button
           type="button"
+          onClick={moveExplanation}
           className="
             h-9 flex-1
             rounded-lg
             bg-blue-600
-            text-[9px]
+            text-[11px]
             font-semibold
             text-white
             transition
@@ -115,11 +123,11 @@ const RiskModuleDetail = ({ module }) => {
 
 const Detail = ({ label, value, danger }) => (
   <div>
-    <p className="text-[8px] text-slate-500">{label}</p>
+    <p className="text-[10px] text-slate-500">{label}</p>
 
     <p
       className={`
-        mt-0.5 text-[9px] font-semibold
+        mt-0.5 text-[11px] font-semibold
         ${danger ? "text-red-500" : "text-slate-700"}
       `}
     >

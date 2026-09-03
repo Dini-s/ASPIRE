@@ -13,11 +13,11 @@ const SoftwareMetricsSummary = () => {
   return (
     <section className="rounded-xl border border-slate-200 bg-white p-4 shadow-sm">
       <div className="flex items-center justify-between">
-        <h2 className="text-xs font-bold text-slate-900">
+        <h2 className="text-sm font-bold text-slate-900">
           Software Metrics Summary
         </h2>
 
-        <button className="rounded-md bg-purple-50 px-3 py-1.5 text-[8px] font-medium text-purple-600">
+        <button className="rounded-md bg-purple-50 px-3 py-1.5 text-[12px] font-medium text-purple-600">
           View All Metrics
         </button>
       </div>
@@ -36,12 +36,12 @@ const SoftwareMetricsSummary = () => {
             "
           >
             <div className="flex items-start justify-between gap-1">
-              <p className="text-[8px] font-semibold text-slate-700">
+              <p className="text-[10px] font-semibold text-slate-700">
                 {metric.name}
               </p>
             </div>
 
-            <p className="mt-1 text-[7px] text-slate-400">{metric.subtitle}</p>
+            <p className="mt-1 text-[9px] text-slate-400">{metric.subtitle}</p>
 
             <div className="mt-1 flex items-center justify-between">
               <span className="text-lg font-bold text-slate-800">
@@ -52,7 +52,7 @@ const SoftwareMetricsSummary = () => {
                 className={`
                   rounded-md
                   px-2 py-1
-                  text-[7px]
+                  text-[9px]
                   font-semibold
                   ${levelStyles[metric.level]}
                 `}
@@ -63,7 +63,7 @@ const SoftwareMetricsSummary = () => {
 
             <p
               className={`
-                mt-1 text-[7px]
+                mt-1 text-[9px]
                 ${
                   metric.change.includes("▼")
                     ? "text-emerald-600"

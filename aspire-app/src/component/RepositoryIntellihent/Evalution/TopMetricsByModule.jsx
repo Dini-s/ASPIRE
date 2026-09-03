@@ -6,13 +6,13 @@ const TopMetricsByModule = () => {
   const max = Math.max(...topMetrics.map((item) => item.value));
 
   return (
-    <section className="rounded-xl border border-slate-200 bg-white p-4 shadow-sm">
+    <section className="rounded-xl border border-slate-200 bg-white p-4  shadow-sm">
       <div className="flex items-center justify-between">
         <h2 className="text-xs font-bold text-slate-900">
           Top Metrics by Module
         </h2>
 
-        <select className="rounded-md border border-slate-200 px-2 py-1 text-[8px] text-slate-600 outline-none">
+        <select className="rounded-md border border-slate-200 px-2 py-1 text-[10px] text-slate-600 outline-none">
           <option>Cyclomatic Complexity</option>
 
           <option>Coupling</option>
@@ -24,9 +24,9 @@ const TopMetricsByModule = () => {
       <div className="mt-4 space-y-3">
         {topMetrics.map((item) => (
           <div key={item.module} className="flex items-center gap-2">
-            <span className="w-4 text-[8px] text-slate-400">{item.rank}</span>
+            <span className="w-4 text-[10px] text-slate-400">{item.rank}</span>
 
-            <span className="w-24 truncate text-[8px] text-slate-600">
+            <span className="w-24 truncate text-[10px] text-slate-600">
               {item.module}
             </span>
 
@@ -39,14 +39,14 @@ const TopMetricsByModule = () => {
               />
             </div>
 
-            <span className="w-6 text-right text-[8px] font-medium text-slate-600">
+            <span className="w-6 text-right text-[10px] font-medium text-slate-600">
               {item.value}
             </span>
           </div>
         ))}
       </div>
 
-      <button className="mt-5 text-[8px] font-medium text-blue-600">
+      <button className="mt-5 text-[10px] font-medium text-blue-600">
         View All Metrics →
       </button>
     </section>

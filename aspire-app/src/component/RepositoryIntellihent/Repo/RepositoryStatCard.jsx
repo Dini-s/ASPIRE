@@ -60,7 +60,7 @@ const RepositoryStatCard = ({ title, value, description, type, icon }) => {
           <p
             className={`
               mt-0.5
-              text-[9px]
+              text-[11px]
               ${
                 type === "red"
                   ? "text-red-500"

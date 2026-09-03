@@ -7,6 +7,8 @@ import {
   Navigate,
 } from "react-router-dom";
 
+  useParams,
+} from "react-router-dom";
 import DashboardLayout from "../Layouts/DashboardLayout";
 
 // =============================================================
@@ -159,6 +161,8 @@ const AppRoutes = () => {
             path="quality/requirements"
             element={<Requirements />}
           />
+          <Route path="repository/ai-explanation" element={<AIExplanation />} />
+          <Route path="repository/issues" element={<ArchitectureIssues />} />
 
           <Route
             path="quality/requirement-details/:requirementId"

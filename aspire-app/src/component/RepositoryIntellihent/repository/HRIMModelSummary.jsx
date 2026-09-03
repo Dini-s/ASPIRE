@@ -43,14 +43,14 @@ const HRIMModelSummary = () => {
 
 const Metric = ({ label, value }) => (
   <div>
-    <p className="text-[8px] text-slate-400">{label}</p>
+    <p className="text-[10px] text-slate-400">{label}</p>
 
     <p className="mt-1 text-xs font-semibold text-slate-800">{value}</p>
   </div>
 );
 
 const Tag = ({ children }) => (
-  <span className="rounded-md bg-indigo-50 px-2 py-1 text-[8px] font-medium text-indigo-600">
+  <span className="rounded-md bg-indigo-50 px-2 py-1 text-[10px] font-medium text-indigo-600">
     {children}
   </span>
 );

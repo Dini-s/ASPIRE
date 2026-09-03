@@ -24,18 +24,18 @@ const DependencyOverview = () => {
                   <Icon size={12} />
                 </div>
 
-                <span className="text-[8px] text-slate-600">
+                <span className="text-[10px] text-slate-600">
                   {dependency.name}
                 </span>
               </div>
 
               <div className="flex items-center gap-2">
-                <span className="text-[8px] font-semibold text-slate-700">
+                <span className="text-[10px] font-semibold text-slate-700">
                   {dependency.value}
                 </span>
 
                 {dependency.percent && (
-                  <span className="text-[7px] text-slate-400">
+                  <span className="text-[9px] text-slate-400">
                     ({dependency.percent})
                   </span>
                 )}
@@ -45,7 +45,7 @@ const DependencyOverview = () => {
         })}
       </div>
 
-      <button className="mt-4 text-[8px] font-medium text-blue-600">
+      <button className="mt-4 text-[10px] font-medium text-blue-600">
         View Dependency Analysis →
       </button>
     </section>
