@@ -5,10 +5,9 @@ import {
   Routes,
   Route,
   Navigate,
-} from "react-router-dom";
-
   useParams,
 } from "react-router-dom";
+
 import DashboardLayout from "../Layouts/DashboardLayout";
 
 // =============================================================
@@ -67,100 +66,61 @@ import ActivityMonitor from "../pages/ActivityMonitor";
 // SYSTEM
 // =============================================================
 import AboutAspire from "../pages/AboutAspire";
+import AIExplanation from "../pages/Repository_Intelligent/AIExplanation";
+import CrossComponentInsights from "../pages/CrossComponentInsights";
 
 const AppRoutes = () => {
   return (
     <BrowserRouter>
       <Routes>
-        <Route
-          path="/"
-          element={<DashboardLayout />}
-        >
+        <Route path="/" element={<DashboardLayout />}>
           {/* =====================================================
               DEFAULT
           ====================================================== */}
 
-          <Route
-            index
-            element={
-              <Navigate
-                to="/overview"
-                replace
-              />
-            }
-          />
+          <Route index element={<Navigate to="/overview" replace />} />
 
           {/* =====================================================
               RESEARCH OVERVIEW
           ====================================================== */}
 
-          <Route
-            path="overview"
-            element={<ResearchOverview />}
-          />
+          <Route path="overview" element={<ResearchOverview />} />
 
           {/* =====================================================
               COMPONENT 1
           ====================================================== */}
 
-          <Route
-            path="requirement"
-            element={<RequirementIntelligence />}
-          />
+          <Route path="requirement" element={<RequirementIntelligence />} />
 
           {/* =====================================================
               COMPONENT 2
           ====================================================== */}
 
-          <Route
-            path="repository"
-            element={<RepositoryIntelligence />}
-          />
+          <Route path="repository" element={<RepositoryIntelligence />} />
 
-          <Route
-            path="repository/repositories"
-            element={<Repositories />}
-          />
+          <Route path="repository/repositories" element={<Repositories />} />
 
-          <Route
-            path="repository/evalution"
-            element={<EvolutionOverview />}
-          />
+          <Route path="repository/evalution" element={<EvolutionOverview />} />
 
-          <Route
-            path="repository/risk-models"
-            element={<RiskModels />}
-          />
+          <Route path="repository/risk-models" element={<RiskModels />} />
 
           <Route
             path="repository/architecture"
             element={<ArchitectureVisualization />}
           />
 
-          <Route
-            path="repository/issues"
-            element={<ArchitectureIssues />}
-          />
+          <Route path="repository/issues" element={<ArchitectureIssues />} />
 
-          <Route
-            path="repository/dependencies"
-            element={<Dependencies />}
-          />
+          <Route path="repository/dependencies" element={<Dependencies />} />
 
           {/* =====================================================
               COMPONENT 3
               QUALITY & TESTING INTELLIGENCE
           ====================================================== */}
 
-          <Route
-            path="quality"
-            element={<QualityTestingIntelligence />}
-          />
+          <Route path="quality" element={<QualityTestingIntelligence />} />
 
-          <Route
-            path="quality/requirements"
-            element={<Requirements />}
-          />
+          <Route path="quality/requirements" element={<Requirements />} />
           <Route path="repository/ai-explanation" element={<AIExplanation />} />
           <Route path="repository/issues" element={<ArchitectureIssues />} />
 
@@ -173,42 +133,28 @@ const AppRoutes = () => {
               COMPONENT 4
           ====================================================== */}
 
-          <Route
-            path="traceability"
-            element={<TraceabilityIntelligence />}
-          />
+          <Route path="traceability" element={<TraceabilityIntelligence />} />
 
           {/* =====================================================
               SHARED LAYER
           ====================================================== */}
 
-          <Route
-            path="knowledge-graph"
-            element={<KnowledgeGraph />}
-          />
+          <Route path="knowledge-graph" element={<KnowledgeGraph />} />
 
           {/* Main shared Reports page */}
-      
 
           {/* Component 3 QA report displayed under Shared Layer */}
-          <Route
-            path="reports/quality"
-            element={<QAReportsAnalytics />}
-          />
+          <Route path="reports/quality" element={<QAReportsAnalytics />} />
 
-          <Route
-            path="activity"
-            element={<ActivityMonitor />}
-          />
+          <Route path="activity" element={<ActivityMonitor />} />
+
+          <Route path="insights" element={<CrossComponentInsights />} />
 
           {/* =====================================================
               SYSTEM
           ====================================================== */}
 
-          <Route
-            path="about"
-            element={<AboutAspire />}
-          />
+          <Route path="about" element={<AboutAspire />} />
         </Route>
       </Routes>
     </BrowserRouter>
