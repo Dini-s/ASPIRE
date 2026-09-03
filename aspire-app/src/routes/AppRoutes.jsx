@@ -1,70 +1,214 @@
 import React from "react";
+
 import {
   BrowserRouter,
   Routes,
   Route,
   Navigate,
+} from "react-router-dom";
+
   useParams,
 } from "react-router-dom";
 import DashboardLayout from "../Layouts/DashboardLayout";
+
+// =============================================================
+// RESEARCH OVERVIEW
+// =============================================================
 import ResearchOverview from "../pages/ResearchOverview";
+
+// =============================================================
+// COMPONENT 1
+// =============================================================
 import RequirementIntelligence from "../pages/RequirementIntelligent/RequirementIntelligence";
+
+// =============================================================
+// COMPONENT 2
+// =============================================================
 import RepositoryIntelligence from "../pages/Repository_Intelligent/RepositoryIntelligence";
+
 import Repositories from "../pages/Repository_Intelligent/Repositories";
+
 import RiskModels from "../pages/Repository_Intelligent/RiskModels";
+
 import ArchitectureVisualization from "../pages/Repository_Intelligent/ArchitectureVisualization";
+
 import ArchitectureIssues from "../pages/Repository_Intelligent/ArchitectureIssues";
+
 import Dependencies from "../pages/Repository_Intelligent/Dependencies";
-import QualityTestingIntelligence from "../pages/QA_Intelligent/QualityTestingIntelligence";
-import TraceabilityIntelligence from "../pages/Tracebility_Intelligent/TraceabilityIntelligence";
-import KnowledgeGraph from "../pages/KnowledgeGraph";
-import Reports from "../pages/Reports";
-import ActivityMonitor from "../pages/ActivityMonitor";
-import AboutAspire from "../pages/AboutAspire";
+
 import EvolutionOverview from "../pages/Repository_Intelligent/EvolutionOverview";
-import AIExplanation from "../pages/Repository_Intelligent/AIExplanation";
-import CrossComponentInsights from "../pages/CrossComponentInsights";
+
+// =============================================================
+// COMPONENT 3
+// =============================================================
+import QualityTestingIntelligence from "../pages/QA_Intelligent/QualityTestingIntelligence";
+
+import Requirements from "../pages/QA_Intelligent/Requirements";
+
+import RequirementDetails from "../pages/QA_Intelligent/RequirementDetails";
+
+import QAReportsAnalytics from "../pages/QA_Intelligent/QAReportsAnalytics";
+
+// =============================================================
+// COMPONENT 4
+// =============================================================
+import TraceabilityIntelligence from "../pages/Tracebility_Intelligent/TraceabilityIntelligence";
+
+// =============================================================
+// SHARED LAYER
+// =============================================================
+import KnowledgeGraph from "../pages/KnowledgeGraph";
+
+import Reports from "../pages/Reports";
+
+import ActivityMonitor from "../pages/ActivityMonitor";
+
+// =============================================================
+// SYSTEM
+// =============================================================
+import AboutAspire from "../pages/AboutAspire";
 
 const AppRoutes = () => {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path="/" element={<DashboardLayout />}>
-          <Route index element={<Navigate to="/overview" replace />} />
+        <Route
+          path="/"
+          element={<DashboardLayout />}
+        >
+          {/* =====================================================
+              DEFAULT
+          ====================================================== */}
 
-          <Route path="overview" element={<ResearchOverview />} />
+          <Route
+            index
+            element={
+              <Navigate
+                to="/overview"
+                replace
+              />
+            }
+          />
 
-          <Route path="requirement" element={<RequirementIntelligence />} />
+          {/* =====================================================
+              RESEARCH OVERVIEW
+          ====================================================== */}
 
-          <Route path="repository" element={<RepositoryIntelligence />} />
+          <Route
+            path="overview"
+            element={<ResearchOverview />}
+          />
 
-          <Route path="repository/repositories" element={<Repositories />} />
+          {/* =====================================================
+              COMPONENT 1
+          ====================================================== */}
 
-          <Route path="repository/evalution" element={<EvolutionOverview />} />
-          <Route path="repository/risk-models" element={<RiskModels />} />
+          <Route
+            path="requirement"
+            element={<RequirementIntelligence />}
+          />
+
+          {/* =====================================================
+              COMPONENT 2
+          ====================================================== */}
+
+          <Route
+            path="repository"
+            element={<RepositoryIntelligence />}
+          />
+
+          <Route
+            path="repository/repositories"
+            element={<Repositories />}
+          />
+
+          <Route
+            path="repository/evalution"
+            element={<EvolutionOverview />}
+          />
+
+          <Route
+            path="repository/risk-models"
+            element={<RiskModels />}
+          />
 
           <Route
             path="repository/architecture"
             element={<ArchitectureVisualization />}
           />
 
+          <Route
+            path="repository/issues"
+            element={<ArchitectureIssues />}
+          />
+
+          <Route
+            path="repository/dependencies"
+            element={<Dependencies />}
+          />
+
+          {/* =====================================================
+              COMPONENT 3
+              QUALITY & TESTING INTELLIGENCE
+          ====================================================== */}
+
+          <Route
+            path="quality"
+            element={<QualityTestingIntelligence />}
+          />
+
+          <Route
+            path="quality/requirements"
+            element={<Requirements />}
+          />
           <Route path="repository/ai-explanation" element={<AIExplanation />} />
           <Route path="repository/issues" element={<ArchitectureIssues />} />
 
-          <Route path="repository/dependencies" element={<Dependencies />} />
+          <Route
+            path="quality/requirement-details/:requirementId"
+            element={<RequirementDetails />}
+          />
 
-          <Route path="quality" element={<QualityTestingIntelligence />} />
+          {/* =====================================================
+              COMPONENT 4
+          ====================================================== */}
 
-          <Route path="traceability" element={<TraceabilityIntelligence />} />
+          <Route
+            path="traceability"
+            element={<TraceabilityIntelligence />}
+          />
 
-          <Route path="knowledge-graph" element={<KnowledgeGraph />} />
-          <Route path="cross-insights" element={<CrossComponentInsights />} />
+          {/* =====================================================
+              SHARED LAYER
+          ====================================================== */}
 
-          <Route path="reports" element={<Reports />} />
+          <Route
+            path="knowledge-graph"
+            element={<KnowledgeGraph />}
+          />
 
-          <Route path="activity" element={<ActivityMonitor />} />
+          {/* Main shared Reports page */}
+      
 
-          <Route path="about" element={<AboutAspire />} />
+          {/* Component 3 QA report displayed under Shared Layer */}
+          <Route
+            path="reports/quality"
+            element={<QAReportsAnalytics />}
+          />
+
+          <Route
+            path="activity"
+            element={<ActivityMonitor />}
+          />
+
+          {/* =====================================================
+              SYSTEM
+          ====================================================== */}
+
+          <Route
+            path="about"
+            element={<AboutAspire />}
+          />
         </Route>
       </Routes>
     </BrowserRouter>
